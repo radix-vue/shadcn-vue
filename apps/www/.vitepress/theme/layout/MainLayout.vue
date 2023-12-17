@@ -8,6 +8,7 @@ import Logo from '../components/Logo.vue'
 import MobileNav from '../components/MobileNav.vue'
 
 import Kbd from '../components/Kbd.vue'
+import ThemePopover from '../components/ThemePopover.vue'
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from '@/lib/registry/default/ui/command'
 
 import { Button } from '@/lib/registry/default/ui/button'
@@ -105,10 +106,10 @@ watch(() => $route.path, (n) => {
           </nav>
         </div>
 
-        <div class=" flex items-center justify-end space-x-4 ">
+        <div class=" flex items-center justify-end space-x-2 ">
           <Button
             variant="outline"
-            class="w-72 h-8 px-3 hidden lg:flex lg:justify-between lg:items-center"
+            class="w-72 h-9 px-3 hidden lg:flex lg:justify-between lg:items-center"
             @click="isOpen = true"
           >
             <div class="flex items-center">
@@ -119,6 +120,7 @@ watch(() => $route.path, (n) => {
               <Kbd> <span>⌘</span>K </Kbd>
             </div>
           </Button>
+          <ThemePopover />
 
           <div class="flex items-center gap-x-1">
             <Button
@@ -126,20 +128,22 @@ watch(() => $route.path, (n) => {
               :key="link.name"
               as="a"
               :href="link.href" target="_blank"
-              :variant="'ghost'" :size="'icon'"
+              :variant="'ghost'"
+              :size="'sm'"
             >
-              <component :is="link.icon" class="w-[20px] h-[20px]" />
+              <component :is="link.icon" />
             </Button>
 
             <Button
               class="flex items-center justify-center"
               aria-label="Toggle dark mode"
               :variant="'ghost'"
-              :size="'icon'" @click="toggleDark()"
+              :size="'sm'"
+              @click="toggleDark()"
             >
               <component
                 :is="isDark ? RadixIconsSun : RadixIconsMoon"
-                class="w-[20px] h-[20px] text-foreground"
+                class="text-foreground"
               />
             </Button>
           </div>

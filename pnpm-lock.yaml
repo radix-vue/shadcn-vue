@@ -60,11 +60,11 @@ importers:
         specifier: ^8.10.7
         version: 8.10.7(vue@3.3.7)
       '@unovis/ts':
-        specifier: ^1.2.3
+        specifier: ^1.2.1
         version: 1.2.3
       '@unovis/vue':
-        specifier: 1.3.0-beta.3
-        version: 1.3.0-beta.3(@unovis/ts@1.2.3)(vue@3.3.7)
+        specifier: 1.3.0
+        version: 1.3.0(@unovis/ts@1.2.3)(vue@3.3.7)
       '@vee-validate/zod':
         specifier: ^4.11.8
         version: 4.11.8(vue@3.3.7)
@@ -4133,8 +4133,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@unovis/vue@1.3.0-beta.3(@unovis/ts@1.2.3)(vue@3.3.7):
-    resolution: {integrity: sha512-LoAotbGkS8T6ejtZ9aRjX4TIYzqlZLZ7L9ArjU0uESQli4WNJv/oysNeR6oumf/UwQEWlz47FtYbwhkSByR0KA==}
+  /@unovis/vue@1.3.0(@unovis/ts@1.2.3)(vue@3.3.7):
+    resolution: {integrity: sha512-t/72dKYDBJ1p+8wINxVdGwjst6YRqImEpJMyJdHvFn5Opl4SD0say35eGHmX9HH3f7yDLMtMQyQUE9Ure8eyIQ==}
     peerDependencies:
       '@unovis/ts': 1.2.1
       vue: ^3
