@@ -5,6 +5,12 @@ source: apps/www/src/lib/registry/default/ui/calendar
 primitive: https://vcalendar.io/
 ---
 
+<script setup>
+import { useConfigStore } from '@/stores/config'
+
+const { codeConfig } = useConfigStore()
+</script>
+
 
 <ComponentPreview name="CalendarDemo"  /> 
 
@@ -46,13 +52,13 @@ npm install v-calendar
 
 ## Usage
 
-```vue
+```vue-vue
 <script setup lang="ts">
-import { Calendar } from '@/components/ui/calendar'
+import { {{codeConfig.prefix}}Calendar } from '{{codeConfig.aliases.components}}/ui/calendar'
 </script>
 
 <template>
-  <Calendar />
+  <{{codeConfig.prefix}}Calendar />
 </template>
 ```
 
