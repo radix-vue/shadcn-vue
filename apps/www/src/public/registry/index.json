@@ -131,6 +131,24 @@
     "type": "components:ui"
   },
   {
+    "name": "carousel",
+    "dependencies": [],
+    "registryDependencies": [
+      "utils"
+    ],
+    "files": [
+      "ui/carousel/Carousel.vue",
+      "ui/carousel/CarouselContent.vue",
+      "ui/carousel/CarouselItem.vue",
+      "ui/carousel/CarouselNext.vue",
+      "ui/carousel/CarouselPrev.vue",
+      "ui/carousel/index.ts",
+      "ui/carousel/interface.ts",
+      "ui/carousel/useCarousel.ts"
+    ],
+    "type": "components:ui"
+  },
+  {
     "name": "checkbox",
     "dependencies": [],
     "registryDependencies": [
