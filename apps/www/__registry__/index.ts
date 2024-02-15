@@ -311,6 +311,13 @@ export const Index = {
       component: () => import('../src/lib/registry/default/example/CommandDialogDemo.vue').then(m => m.default),
       files: ['../src/lib/registry/default/example/CommandDialogDemo.vue'],
     },
+    CommandDialogUseFuseDemo: {
+      name: 'CommandDialogUseFuseDemo',
+      type: 'components:example',
+      registryDependencies: ['command'],
+      component: () => import('../src/lib/registry/default/example/CommandDialogUseFuseDemo.vue').then(m => m.default),
+      files: ['../src/lib/registry/default/example/CommandDialogUseFuseDemo.vue'],
+    },
     ContextMenuDemo: {
       name: 'ContextMenuDemo',
       type: 'components:example',
@@ -1264,6 +1271,13 @@ export const Index = {
       registryDependencies: ['command'],
       component: () => import('../src/lib/registry/new-york/example/CommandDialogDemo.vue').then(m => m.default),
       files: ['../src/lib/registry/new-york/example/CommandDialogDemo.vue'],
+    },
+    CommandDialogUseFuseDemo: {
+      name: 'CommandDialogUseFuseDemo',
+      type: 'components:example',
+      registryDependencies: ['command'],
+      component: () => import('../src/lib/registry/new-york/example/CommandDialogUseFuseDemo.vue').then(m => m.default),
+      files: ['../src/lib/registry/new-york/example/CommandDialogUseFuseDemo.vue'],
     },
     ContextMenuDemo: {
       name: 'ContextMenuDemo',
