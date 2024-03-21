@@ -16,9 +16,7 @@ import Metric from '@/lib/registry/new-york/example/Cards/Metric.vue'
 import DataTable from '@/lib/registry/new-york/example/Cards/DataTable.vue'
 import CardStats from '@/lib/registry/new-york/example/CardStats.vue'
 
-import {
-  Card,
-} from '@/lib/registry/new-york/ui/card'
+import { Card } from '@/lib/registry/new-york/ui/card'
 import { Calendar } from '@/lib/registry/new-york/ui/calendar'
 
 const range = ref({

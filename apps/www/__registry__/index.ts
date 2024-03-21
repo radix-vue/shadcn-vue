@@ -31,6 +31,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/AlertDialogDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/AlertDialogDemo.vue"],
     },
+    "AreaChartDemo": {
+      name: "AreaChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-area"],
+      component: () => import("../src/lib/registry/default/example/AreaChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/AreaChartDemo.vue"],
+    },
     "AspectRatioDemo": {
       name: "AspectRatioDemo",
       type: "components:example",
@@ -72,6 +79,13 @@ export const Index = {
       registryDependencies: ["badge"],
       component: () => import("../src/lib/registry/default/example/BadgeSecondaryDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/BadgeSecondaryDemo.vue"],
+    },
+    "BarChartDemo": {
+      name: "BarChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-bar"],
+      component: () => import("../src/lib/registry/default/example/BarChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/BarChartDemo.vue"],
     },
     "BreadcrumbDemo": {
       name: "BreadcrumbDemo",
@@ -458,6 +472,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DialogScrollOverlayDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DialogScrollOverlayDemo.vue"],
     },
+    "DonutChartDemo": {
+      name: "DonutChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-donut"],
+      component: () => import("../src/lib/registry/default/example/DonutChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/DonutChartDemo.vue"],
+    },
     "DrawerDemo": {
       name: "DrawerDemo",
       type: "components:example",
@@ -562,6 +583,13 @@ export const Index = {
       registryDependencies: ["checkbox","label"],
       component: () => import("../src/lib/registry/default/example/LabelDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/LabelDemo.vue"],
+    },
+    "LineChartDemo": {
+      name: "LineChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-line"],
+      component: () => import("../src/lib/registry/default/example/LineChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/LineChartDemo.vue"],
     },
     "MenubarDemo": {
       name: "MenubarDemo",
@@ -1131,6 +1159,13 @@ export const Index = {
       component: () => import("../src/lib/registry/new-york/example/AlertDialogDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/AlertDialogDemo.vue"],
     },
+    "AreaChartDemo": {
+      name: "AreaChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-area"],
+      component: () => import("../src/lib/registry/new-york/example/AreaChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/AreaChartDemo.vue"],
+    },
     "AspectRatioDemo": {
       name: "AspectRatioDemo",
       type: "components:example",
@@ -1172,6 +1207,13 @@ export const Index = {
       registryDependencies: ["badge"],
       component: () => import("../src/lib/registry/new-york/example/BadgeSecondaryDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/BadgeSecondaryDemo.vue"],
+    },
+    "BarChartDemo": {
+      name: "BarChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-bar"],
+      component: () => import("../src/lib/registry/new-york/example/BarChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/BarChartDemo.vue"],
     },
     "BreadcrumbDemo": {
       name: "BreadcrumbDemo",
@@ -1558,6 +1600,13 @@ export const Index = {
       component: () => import("../src/lib/registry/new-york/example/DialogScrollOverlayDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DialogScrollOverlayDemo.vue"],
     },
+    "DonutChartDemo": {
+      name: "DonutChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-donut"],
+      component: () => import("../src/lib/registry/new-york/example/DonutChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/DonutChartDemo.vue"],
+    },
     "DrawerDemo": {
       name: "DrawerDemo",
       type: "components:example",
@@ -1662,6 +1711,13 @@ export const Index = {
       registryDependencies: ["checkbox","label"],
       component: () => import("../src/lib/registry/new-york/example/LabelDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/LabelDemo.vue"],
+    },
+    "LineChartDemo": {
+      name: "LineChartDemo",
+      type: "components:example",
+      registryDependencies: ["chart-line"],
+      component: () => import("../src/lib/registry/new-york/example/LineChartDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/LineChartDemo.vue"],
     },
     "MenubarDemo": {
       name: "MenubarDemo",

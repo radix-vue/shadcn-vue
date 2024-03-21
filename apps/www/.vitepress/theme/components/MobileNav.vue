@@ -63,17 +63,26 @@ const open = ref(false)
         </div>
         <div class="flex flex-col space-y-2">
           <div v-for="(items, index) in docsConfig.sidebarNav" :key="index" class="flex flex-col space-y-3 pt-6">
-            <h4 class="font-medium">
-              {{ items.title }}
-            </h4>
+            <div class="flex items-center">
+              <h4 class="font-medium">
+                {{ items.title }}
+              </h4>
+              <Badge v-if="items.label" class="ml-2">
+                {{ items.label }}
+              </Badge>
+            </div>
 
             <a
               v-for="item in items.items" :key="item.href"
               :href="item.href"
-              class="text-muted-foreground"
+              class="text-muted-foreground inline-flex items-center"
               @click="open = false"
             >
               {{ item.title }}
+
+              <Badge v-if="item.label" class="ml-2">
+                {{ item.label }}
+              </Badge>
             </a>
           </div>
         </div>

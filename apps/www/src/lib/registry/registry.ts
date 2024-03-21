@@ -10,6 +10,7 @@ const DEPENDENCIES = new Map<string, string[]>([
   ['vue-sonner', []],
   ['v-calendar', []],
   ['@tanstack/vue-table', []],
+  ['@unovis/vue', ['@unovis/ts']],
   ['embla-carousel-vue', ['embla-carousel']],
   ['vee-validate', ['@vee-validate/zod', 'zod']],
 ])
